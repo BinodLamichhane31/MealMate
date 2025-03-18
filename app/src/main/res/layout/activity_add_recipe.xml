@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.home.AddRecipeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10sp"
+        android:gravity="center"
+        android:background="#092c5c">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/common_google_signin_btn_icon_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Add Recipe"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etRecipeName"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="40sp"
+        android:background="@drawable/custom_input"
+        android:hint="Recipe Name"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10sp"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/etIngredients"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        android:layout_height="70sp"
+        android:background="@drawable/custom_input"
+        android:hint="Ingredients (comma separated)"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10sp"/>
+
+    <EditText
+        android:id="@+id/etInstructions"
+        android:layout_width="380dp"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_input"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:layout_height="100sp"
+        android:hint="Instructions"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10sp"/>
+
+    <EditText
+        android:id="@+id/etServing"
+        android:layout_width="380dp"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_input"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:layout_height="40sp"
+        android:hint="Serving"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10sp"/>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Catagory:"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="260dp"
+            android:layout_gravity="center"
+            android:theme="@style/AppTheme"
+            android:layout_height="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnAddRecipe"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btns"
+        android:text="Add Recipe"/>
+
+
+</LinearLayout>
