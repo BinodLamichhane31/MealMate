@@ -40,6 +40,7 @@ class GroceryFragment : Fragment() {
             groceryItems.clear()
             groceryItems.addAll(items)
             adapter.clear()
+
             adapter.addAll(
                 groceryItems.map {
                     val status = if (it.purchased) "(✔ \uD835\uDE17\uD835\uDE36\uD835\uDE33\uD835\uDE24\uD835\uDE29\uD835\uDE22\uD835\uDE34\uD835\uDE26\uD835\uDE25)" else ""
